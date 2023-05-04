@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <title>MARIE TEAM</title>
     <meta charset="UTF-8">
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 <body>
-@include('components/nav')
 <div>
     <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">

@@ -4,10 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Port extends Model
+class Secteur extends Model
 {
-    protected $table = 'port';
+    protected $table = 'secteur';
     protected $fillable = ['id', 'nom'];
     public $timestamps = false;
-
 }

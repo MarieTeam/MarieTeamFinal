@@ -12,7 +12,7 @@ class TarifController extends Controller
 
     public function viewTarif()
     {
-        $types = DB::select('SELECT * FROM `Categorie`');
+        $types = DB::select('SELECT * FROM `categorie`');
 
         $tarifsEte = DB::table('Tarifer')
         ->select('Tarifer.tarif', 'Type.libelle', 'Tarifer.lettre_type', 'Tarifer.num_type')

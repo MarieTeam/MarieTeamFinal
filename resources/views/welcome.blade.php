@@ -59,10 +59,10 @@
             @auth
                 @include('layouts.navigation')
             @else
-                <a {{ route('home') }} class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Accueil</a>
-                <a {{ route('tarifs') }} class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Tarifs</a>
-                <a {{ route('horaires') }} class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horaire</a>
-                <a {{ route('reservations') }} class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Reserver</a>
+                <a href="{{ route('home') }}" class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Accueil</a>
+                <a href="{{ route('tarifs') }}" class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Tarifs</a>
+                <a href="{{ route('horaires') }}" class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horaire</a>
+                <a href="{{ route('reservations') }}" class="px-2 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Reserver</a>
 
                 <a href="{{ route('login') }}"
                    class="font-semibold bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Connexion</a>
