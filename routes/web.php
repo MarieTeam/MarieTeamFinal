@@ -32,8 +32,11 @@ Route::get('/reserver/{selectDepart?}/{selectArrivee?}', [ReservationController:
 Route::post('/reservations/checkAvailability', [ReservationController::class, 'checkAvailability'])->name('reservations.checkAvailability');
 Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
 Route::get('/reservations', [ReservationController::class, 'getAvailableBoats'])->name('reservations.getAvailableBoats');
-Route::post('/reservations/update', [ReservationController::class,'updateAjax'])->name('reservations.updateAjax');
+Route::get('/reservations/success', [ReservationController::class, 'showSuccess'])->name('reservations.success');
+
 Route::get('/recapitulatif', [RecapitulatifController::class, 'index'])->name('recapitulatif');
+
+Route::get('/people-types', [App\Http\Controllers\PersonneController::class, 'getPeopleTypes'])->name('peopleTypes');
 
 
 Route::get('/admin', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
